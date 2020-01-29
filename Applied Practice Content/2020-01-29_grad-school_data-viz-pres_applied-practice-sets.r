@@ -54,7 +54,6 @@ ggplot2::msleep
 ggplot2::mpg
 
 ggmap::crime
-ggmap::wind
 
 
 

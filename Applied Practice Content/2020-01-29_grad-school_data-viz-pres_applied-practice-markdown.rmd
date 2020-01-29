@@ -1,0 +1,317 @@
+---
+title: 'Picture This: Applied Practice Datasets'
+subtitle: "Jamison Crawford, MPA"
+author: "Institutional Researcher, The Graduate School"
+date: "January 29, 2020"
+output:
+  html_document:
+    number_sections: yes
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+    theme: cerulean
+    highlight: haddock
+  pdf_document:
+    toc: yes
+    toc_depth: '4'
+---
+
+
+
+<style>
+body {
+text-align: justify}
+</style>
+
+
+
+```{r include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, 
+                      message = FALSE,
+                      warning = FALSE)
+```
+
+
+
+<br>
+
+
+
+# Welcome
+
+Welcome to **Picture This: Applied Practice in Data Visualization**.
+
+This page contains a host of materials for practicing data visualization, 
+including:
+
+* Links to the original presentation
+* Twelve preprocessed datasets for applied practice
+* Dataset documentation to explore and understand your data
+* Resources for color, accessibility, and other tools to polish your viz 
+* Tutorials to learn about and connect your data to *Google Data Studio* & *MS Excel*
+
+
+
+<br>
+<br>
+<br>
+
+
+
+# Presentation & Contents
+
+Click [**here**](https://github.com/jamisoncrawford/dataviz/raw/master/Best%20Practices%20Content/2020-01-28%20-%20Picture%20This%20-%20Best%20Practices%20in%20Data%20Visualization%20(Crawford%2C%202020).pptx) to download Tuesday's presentation, **Picture This: Best Practices in Data Visualization**.
+
+You can view the code to process our practice datasets and write this page by visiting the [**GitHub repository**](https://github.com/jamisoncrawford/dataviz).
+
+
+
+<br>
+<br>
+<br>
+
+
+
+# Practice Datasets
+
+Feel free to use your own data or peruse the available practice datasets and documentation below.
+
+Data were selected for their variance to support several approaches to data visualization.
+
+Some datasets are moderately large, others are quite small, but all are clean.
+
+* Variable names are formatted for case, punctuation, and descriptiveness
+* Datetimes have been formatted to ISO format and parsed on both `Month` and `Year`
+* Coordinate values are concatenated and parsed for all possible longitude-latitude permutations
+
+<br>
+
+**It's up to you to find the stories in the data.**
+
+
+
+<br>
+<br>
+<br>
+
+
+## Mammalian Sleep Patterns
+
+**Total Observations:** 83
+
+**Total Variables:** 11
+
+The sleep patterns of 83 mammals, including their common name, genus, diet, total 
+sleep state, REM state, and awake state (in hours), as well as body and brain weight.
+
+View the documentation [**here**](https://ggplot2.tidyverse.org/reference/msleep.html).
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/1NzqHZzynywgZMbBj7qKD7tsNpG4f5xLmETVq2Q_hDXo/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+
+<br>
+
+
+
+## U.S. Economics
+
+**Total Observations:** 574
+
+**Total Variables:** 6
+
+Time series data on economic indicators in the United States from 1967 to 2015, 
+including total population, personal savings rates, personal consumption expenditures, 
+unemployment rates, and median unemployment duration (in weeks).
+
+View the documentation [**here**](https://ggplot2.tidyverse.org/reference/economics.html).
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/1T0LdBMRgdXpflUgphL2W3gkxdAQ-UT6GYDNPSYjCts0/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+
+<br>
+
+
+
+## Australian Wine
+
+**Total Observations:** 176
+
+**Total Variables:** 6
+
+View the documentation [**here**](https://cran.r-project.org/web/packages/forecast/forecast.pdf) (pp. 137-138).
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/16XjLjj0ZiHP-NAMC19qztf_YEttLK17fIdCL12Ep6EI/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+
+<br>
+
+
+
+## Houston Crime
+
+**Total Observations:** 86,314
+
+**Total Variables:** 19
+
+View the documentation [**here**](https://www.houstontx.gov/police/cs/Monthly_Crime_Data_by_Street_and_Police_Beat.htm). 
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/1oIY6q8JqUnRalvX3Qv6XpF8h7Mxkh270AY7ugRsq7Uc/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+
+<br>
+
+
+
+
+## Anderson's Irises
+
+**Total Observations:** 150
+
+**Total Variables:** 6
+
+View the documentation [**here**](https://www.rdocumentation.org/packages/datasets/versions/3.6.2/topics/iris). 
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/1qHnBa7hHoxidn8F5AHaOzygSf1LUK7rc4fxkF3H294U/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+
+<br>
+
+
+
+## College Score Cards
+
+**Total Observations:** 7,112
+
+**Total Variables:** 21
+
+Reduced from 1,978 variables, 
+
+View the documentation [**here**](https://collegescorecard.ed.gov/data/documentation/).
+
+Find the data portal [**here**](https://collegescorecard.ed.gov/data/).
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/16Z_S25YUDTA9XTETiP3erHlgWfo2m8Ues_jWCax0pHE/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+
+<br>
+
+
+
+## Australian Wool
+
+**Total Observations:** 119
+
+**Total Variables:** 3
+
+View the documentation [**here**](https://cran.r-project.org/web/packages/forecast/forecast.pdf) (pp. 138).
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/1ZqMtPkW7cOyGFj-pxx0oEB5rm62mRCQ-gfCLNqCAmWg/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+
+<br>
+
+
+
+## Fuel Efficiency
+
+**Total Observations:** 234
+
+**Total Variables:** 11
+
+View the documentation [**here**](https://ggplot2.tidyverse.org/reference/mpg.html).
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/1V4-57hFM-ghCwZ1UUG-of3IPwjINaJTl-WQ6n9Oo_Jo/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+
+<br>
+
+
+
+## 53,000 Diamonds
+
+**Total Observations:** 53,940
+
+**Total Variables:** 9
+
+View the documentation [**here**](https://ggplot2.tidyverse.org/reference/diamonds.html).
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/1sVh_xUnnwuB-AQzkgRMKN8TZyHPyR4dQTklDHTgD9qg/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+
+<br>
+
+
+
+## Texas Real Estate
+
+**Total Observations:** 8,602
+
+**Total Variables:** 11
+
+View the documentation [**here**](https://ggplot2.tidyverse.org/reference/txhousing.html)
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/1-KicsB_bJZz3ANk8mnhnUmJktzXy1AnHrXPY3OpWo6c/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+
+<br>
+
+
+
+## Daily Gold Prices
+
+**Total Observations:** 1,108
+
+**Total Variables:** 4
+
+View the documentation [**here**](https://cran.r-project.org/web/packages/forecast/forecast.pdf) (pp. 84-85).
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/16HB4s8wtGmry1IHQw9giNFi0N2bNZX0CucjwEDNUWUo/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+
+<br>
+
+
+
+## Chick Weights
+
+**Total Observations:**
+
+**Total Variables:**
+
+View the documentation [**here**](https://stat.ethz.ch/R-manual/R-patched/library/datasets/html/chickwts.html).
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/1K3D_KXJh2NnBsMnonNJvKoculks6Xey4dX0wa7Dgr3E/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+
+<br>
+
+
+
+## Classic Cars
+
+**Total Observations:**
+
+**Total Variables:**
+
+View the documentation [**here**](https://www.rdocumentation.org/packages/datasets/versions/3.6.2/topics/mtcars).
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/1dFKlfRTnVFyuXSWcDXVyslm4AO86MJY_-1zUjevMh2A/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+
+<br>
+
+
+
