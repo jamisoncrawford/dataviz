@@ -1,0 +1,235 @@
+Make,Model,Displacement,Year,Cylinders,Transmission,Drive,City MPG,Highway MPG,Fuel Type,Class
+Audi,A4,1.8,1999,4,Manual,Front-Wheel,18,29,P,Compact
+Audi,A4,1.8,1999,4,Manual,Front-Wheel,21,29,P,Compact
+Audi,A4,2,2008,4,Manual,Front-Wheel,20,31,P,Compact
+Audi,A4,2,2008,4,Manual,Front-Wheel,21,30,P,Compact
+Audi,A4,2.8,1999,6,Manual,Front-Wheel,16,26,P,Compact
+Audi,A4,2.8,1999,6,Manual,Front-Wheel,18,26,P,Compact
+Audi,A4,3.1,2008,6,Manual,Front-Wheel,18,27,P,Compact
+Audi,A4 Quattro,1.8,1999,4,Manual,Four-Wheel,18,26,P,Compact
+Audi,A4 Quattro,1.8,1999,4,Manual,Four-Wheel,16,25,P,Compact
+Audi,A4 Quattro,2,2008,4,Manual,Four-Wheel,20,28,P,Compact
+Audi,A4 Quattro,2,2008,4,Manual,Four-Wheel,19,27,P,Compact
+Audi,A4 Quattro,2.8,1999,6,Manual,Four-Wheel,15,25,P,Compact
+Audi,A4 Quattro,2.8,1999,6,Manual,Four-Wheel,17,25,P,Compact
+Audi,A4 Quattro,3.1,2008,6,Manual,Four-Wheel,17,25,P,Compact
+Audi,A4 Quattro,3.1,2008,6,Manual,Four-Wheel,15,25,P,Compact
+Audi,A6 Quattro,2.8,1999,6,Manual,Four-Wheel,15,24,P,Midsize
+Audi,A6 Quattro,3.1,2008,6,Manual,Four-Wheel,17,25,P,Midsize
+Audi,A6 Quattro,4.2,2008,8,Manual,Four-Wheel,16,23,P,Midsize
+Chevrolet,C1500 Suburban 2WD,5.3,2008,8,Manual,Rear-Wheel,14,20,R,SUV
+Chevrolet,C1500 Suburban 2WD,5.3,2008,8,Manual,Rear-Wheel,11,15,E,SUV
+Chevrolet,C1500 Suburban 2WD,5.3,2008,8,Manual,Rear-Wheel,14,20,R,SUV
+Chevrolet,C1500 Suburban 2WD,5.7,1999,8,Manual,Rear-Wheel,13,17,R,SUV
+Chevrolet,C1500 Suburban 2WD,6,2008,8,Manual,Rear-Wheel,12,17,R,SUV
+Chevrolet,Corvette,5.7,1999,8,Manual,Rear-Wheel,16,26,P,Coupe
+Chevrolet,Corvette,5.7,1999,8,Manual,Rear-Wheel,15,23,P,Coupe
+Chevrolet,Corvette,6.2,2008,8,Manual,Rear-Wheel,16,26,P,Coupe
+Chevrolet,Corvette,6.2,2008,8,Manual,Rear-Wheel,15,25,P,Coupe
+Chevrolet,Corvette,7,2008,8,Manual,Rear-Wheel,15,24,P,Coupe
+Chevrolet,K1500 Tahoe 4WD,5.3,2008,8,Manual,Four-Wheel,14,19,R,SUV
+Chevrolet,K1500 Tahoe 4WD,5.3,2008,8,Manual,Four-Wheel,11,14,E,SUV
+Chevrolet,K1500 Tahoe 4WD,5.7,1999,8,Manual,Four-Wheel,11,15,R,SUV
+Chevrolet,K1500 Tahoe 4WD,6.5,1999,8,Manual,Four-Wheel,14,17,D,SUV
+Chevrolet,Malibu,2.4,1999,4,Manual,Front-Wheel,19,27,R,Midsize
+Chevrolet,Malibu,2.4,2008,4,Manual,Front-Wheel,22,30,R,Midsize
+Chevrolet,Malibu,3.1,1999,6,Manual,Front-Wheel,18,26,R,Midsize
+Chevrolet,Malibu,3.5,2008,6,Manual,Front-Wheel,18,29,R,Midsize
+Chevrolet,Malibu,3.6,2008,6,Manual,Front-Wheel,17,26,R,Midsize
+Dodge,Caravan 2WD,2.4,1999,4,Manual,Front-Wheel,18,24,R,Minivan
+Dodge,Caravan 2WD,3,1999,6,Manual,Front-Wheel,17,24,R,Minivan
+Dodge,Caravan 2WD,3.3,1999,6,Manual,Front-Wheel,16,22,R,Minivan
+Dodge,Caravan 2WD,3.3,1999,6,Manual,Front-Wheel,16,22,R,Minivan
+Dodge,Caravan 2WD,3.3,2008,6,Manual,Front-Wheel,17,24,R,Minivan
+Dodge,Caravan 2WD,3.3,2008,6,Manual,Front-Wheel,17,24,R,Minivan
+Dodge,Caravan 2WD,3.3,2008,6,Manual,Front-Wheel,11,17,E,Minivan
+Dodge,Caravan 2WD,3.8,1999,6,Manual,Front-Wheel,15,22,R,Minivan
+Dodge,Caravan 2WD,3.8,1999,6,Manual,Front-Wheel,15,21,R,Minivan
+Dodge,Caravan 2WD,3.8,2008,6,Manual,Front-Wheel,16,23,R,Minivan
+Dodge,Caravan 2WD,4,2008,6,Manual,Front-Wheel,16,23,R,Minivan
+Dodge,Dakota Pickup 4WD,3.7,2008,6,Manual,Four-Wheel,15,19,R,Pickup
+Dodge,Dakota Pickup 4WD,3.7,2008,6,Manual,Four-Wheel,14,18,R,Pickup
+Dodge,Dakota Pickup 4WD,3.9,1999,6,Manual,Four-Wheel,13,17,R,Pickup
+Dodge,Dakota Pickup 4WD,3.9,1999,6,Manual,Four-Wheel,14,17,R,Pickup
+Dodge,Dakota Pickup 4WD,4.7,2008,8,Manual,Four-Wheel,14,19,R,Pickup
+Dodge,Dakota Pickup 4WD,4.7,2008,8,Manual,Four-Wheel,14,19,R,Pickup
+Dodge,Dakota Pickup 4WD,4.7,2008,8,Manual,Four-Wheel,9,12,E,Pickup
+Dodge,Dakota Pickup 4WD,5.2,1999,8,Manual,Four-Wheel,11,17,R,Pickup
+Dodge,Dakota Pickup 4WD,5.2,1999,8,Manual,Four-Wheel,11,15,R,Pickup
+Dodge,Durango 4WD,3.9,1999,6,Manual,Four-Wheel,13,17,R,SUV
+Dodge,Durango 4WD,4.7,2008,8,Manual,Four-Wheel,13,17,R,SUV
+Dodge,Durango 4WD,4.7,2008,8,Manual,Four-Wheel,9,12,E,SUV
+Dodge,Durango 4WD,4.7,2008,8,Manual,Four-Wheel,13,17,R,SUV
+Dodge,Durango 4WD,5.2,1999,8,Manual,Four-Wheel,11,16,R,SUV
+Dodge,Durango 4WD,5.7,2008,8,Manual,Four-Wheel,13,18,R,SUV
+Dodge,Durango 4WD,5.9,1999,8,Manual,Four-Wheel,11,15,R,SUV
+Dodge,Ram 1500 Pickup 4WD,4.7,2008,8,Manual,Four-Wheel,12,16,R,Pickup
+Dodge,Ram 1500 Pickup 4WD,4.7,2008,8,Manual,Four-Wheel,9,12,E,Pickup
+Dodge,Ram 1500 Pickup 4WD,4.7,2008,8,Manual,Four-Wheel,13,17,R,Pickup
+Dodge,Ram 1500 Pickup 4WD,4.7,2008,8,Manual,Four-Wheel,13,17,R,Pickup
+Dodge,Ram 1500 Pickup 4WD,4.7,2008,8,Manual,Four-Wheel,12,16,R,Pickup
+Dodge,Ram 1500 Pickup 4WD,4.7,2008,8,Manual,Four-Wheel,9,12,E,Pickup
+Dodge,Ram 1500 Pickup 4WD,5.2,1999,8,Manual,Four-Wheel,11,15,R,Pickup
+Dodge,Ram 1500 Pickup 4WD,5.2,1999,8,Manual,Four-Wheel,11,16,R,Pickup
+Dodge,Ram 1500 Pickup 4WD,5.7,2008,8,Manual,Four-Wheel,13,17,R,Pickup
+Dodge,Ram 1500 Pickup 4WD,5.9,1999,8,Manual,Four-Wheel,11,15,R,Pickup
+Ford,Expedition 2WD,4.6,1999,8,Manual,Rear-Wheel,11,17,R,SUV
+Ford,Expedition 2WD,5.4,1999,8,Manual,Rear-Wheel,11,17,R,SUV
+Ford,Expedition 2WD,5.4,2008,8,Manual,Rear-Wheel,12,18,R,SUV
+Ford,Explorer 4WD,4,1999,6,Manual,Four-Wheel,14,17,R,SUV
+Ford,Explorer 4WD,4,1999,6,Manual,Four-Wheel,15,19,R,SUV
+Ford,Explorer 4WD,4,1999,6,Manual,Four-Wheel,14,17,R,SUV
+Ford,Explorer 4WD,4,2008,6,Manual,Four-Wheel,13,19,R,SUV
+Ford,Explorer 4WD,4.6,2008,8,Manual,Four-Wheel,13,19,R,SUV
+Ford,Explorer 4WD,5,1999,8,Manual,Four-Wheel,13,17,R,SUV
+Ford,F150 Pickup 4WD,4.2,1999,6,Manual,Four-Wheel,14,17,R,Pickup
+Ford,F150 Pickup 4WD,4.2,1999,6,Manual,Four-Wheel,14,17,R,Pickup
+Ford,F150 Pickup 4WD,4.6,1999,8,Manual,Four-Wheel,13,16,R,Pickup
+Ford,F150 Pickup 4WD,4.6,1999,8,Manual,Four-Wheel,13,16,R,Pickup
+Ford,F150 Pickup 4WD,4.6,2008,8,Manual,Four-Wheel,13,17,R,Pickup
+Ford,F150 Pickup 4WD,5.4,1999,8,Manual,Four-Wheel,11,15,R,Pickup
+Ford,F150 Pickup 4WD,5.4,2008,8,Manual,Four-Wheel,13,17,R,Pickup
+Ford,Mustang,3.8,1999,6,Manual,Rear-Wheel,18,26,R,Subcompact
+Ford,Mustang,3.8,1999,6,Manual,Rear-Wheel,18,25,R,Subcompact
+Ford,Mustang,4,2008,6,Manual,Rear-Wheel,17,26,R,Subcompact
+Ford,Mustang,4,2008,6,Manual,Rear-Wheel,16,24,R,Subcompact
+Ford,Mustang,4.6,1999,8,Manual,Rear-Wheel,15,21,R,Subcompact
+Ford,Mustang,4.6,1999,8,Manual,Rear-Wheel,15,22,R,Subcompact
+Ford,Mustang,4.6,2008,8,Manual,Rear-Wheel,15,23,R,Subcompact
+Ford,Mustang,4.6,2008,8,Manual,Rear-Wheel,15,22,R,Subcompact
+Ford,Mustang,5.4,2008,8,Manual,Rear-Wheel,14,20,P,Subcompact
+Honda,Civic,1.6,1999,4,Manual,Front-Wheel,28,33,R,Subcompact
+Honda,Civic,1.6,1999,4,Manual,Front-Wheel,24,32,R,Subcompact
+Honda,Civic,1.6,1999,4,Manual,Front-Wheel,25,32,R,Subcompact
+Honda,Civic,1.6,1999,4,Manual,Front-Wheel,23,29,P,Subcompact
+Honda,Civic,1.6,1999,4,Manual,Front-Wheel,24,32,R,Subcompact
+Honda,Civic,1.8,2008,4,Manual,Front-Wheel,26,34,R,Subcompact
+Honda,Civic,1.8,2008,4,Manual,Front-Wheel,25,36,R,Subcompact
+Honda,Civic,1.8,2008,4,Manual,Front-Wheel,24,36,C,Subcompact
+Honda,Civic,2,2008,4,Manual,Front-Wheel,21,29,P,Subcompact
+Hyundai,Sonata,2.4,1999,4,Manual,Front-Wheel,18,26,R,Midsize
+Hyundai,Sonata,2.4,1999,4,Manual,Front-Wheel,18,27,R,Midsize
+Hyundai,Sonata,2.4,2008,4,Manual,Front-Wheel,21,30,R,Midsize
+Hyundai,Sonata,2.4,2008,4,Manual,Front-Wheel,21,31,R,Midsize
+Hyundai,Sonata,2.5,1999,6,Manual,Front-Wheel,18,26,R,Midsize
+Hyundai,Sonata,2.5,1999,6,Manual,Front-Wheel,18,26,R,Midsize
+Hyundai,Sonata,3.3,2008,6,Manual,Front-Wheel,19,28,R,Midsize
+Hyundai,Tiburon,2,1999,4,Manual,Front-Wheel,19,26,R,Subcompact
+Hyundai,Tiburon,2,1999,4,Manual,Front-Wheel,19,29,R,Subcompact
+Hyundai,Tiburon,2,2008,4,Manual,Front-Wheel,20,28,R,Subcompact
+Hyundai,Tiburon,2,2008,4,Manual,Front-Wheel,20,27,R,Subcompact
+Hyundai,Tiburon,2.7,2008,6,Manual,Front-Wheel,17,24,R,Subcompact
+Hyundai,Tiburon,2.7,2008,6,Manual,Front-Wheel,16,24,R,Subcompact
+Hyundai,Tiburon,2.7,2008,6,Manual,Front-Wheel,17,24,R,Subcompact
+Jeep,Grand Cherokee 4WD,3,2008,6,Manual,Four-Wheel,17,22,D,SUV
+Jeep,Grand Cherokee 4WD,3.7,2008,6,Manual,Four-Wheel,15,19,R,SUV
+Jeep,Grand Cherokee 4WD,4,1999,6,Manual,Four-Wheel,15,20,R,SUV
+Jeep,Grand Cherokee 4WD,4.7,1999,8,Manual,Four-Wheel,14,17,R,SUV
+Jeep,Grand Cherokee 4WD,4.7,2008,8,Manual,Four-Wheel,9,12,E,SUV
+Jeep,Grand Cherokee 4WD,4.7,2008,8,Manual,Four-Wheel,14,19,R,SUV
+Jeep,Grand Cherokee 4WD,5.7,2008,8,Manual,Four-Wheel,13,18,R,SUV
+Jeep,Grand Cherokee 4WD,6.1,2008,8,Manual,Four-Wheel,11,14,P,SUV
+Land Rover,Range Rover,4,1999,8,Manual,Four-Wheel,11,15,P,SUV
+Land Rover,Range Rover,4.2,2008,8,Manual,Four-Wheel,12,18,R,SUV
+Land Rover,Range Rover,4.4,2008,8,Manual,Four-Wheel,12,18,R,SUV
+Land Rover,Range Rover,4.6,1999,8,Manual,Four-Wheel,11,15,P,SUV
+Lincoln,Navigator 2WD,5.4,1999,8,Manual,Rear-Wheel,11,17,R,SUV
+Lincoln,Navigator 2WD,5.4,1999,8,Manual,Rear-Wheel,11,16,P,SUV
+Lincoln,Navigator 2WD,5.4,2008,8,Manual,Rear-Wheel,12,18,R,SUV
+Mercury,Mountaineer 4WD,4,1999,6,Manual,Four-Wheel,14,17,R,SUV
+Mercury,Mountaineer 4WD,4,2008,6,Manual,Four-Wheel,13,19,R,SUV
+Mercury,Mountaineer 4WD,4.6,2008,8,Manual,Four-Wheel,13,19,R,SUV
+Mercury,Mountaineer 4WD,5,1999,8,Manual,Four-Wheel,13,17,R,SUV
+Nissan,Altima,2.4,1999,4,Manual,Front-Wheel,21,29,R,Compact
+Nissan,Altima,2.4,1999,4,Manual,Front-Wheel,19,27,R,Compact
+Nissan,Altima,2.5,2008,4,Manual,Front-Wheel,23,31,R,Midsize
+Nissan,Altima,2.5,2008,4,Manual,Front-Wheel,23,32,R,Midsize
+Nissan,Altima,3.5,2008,6,Manual,Front-Wheel,19,27,P,Midsize
+Nissan,Altima,3.5,2008,6,Manual,Front-Wheel,19,26,P,Midsize
+Nissan,Maxima,3,1999,6,Manual,Front-Wheel,18,26,R,Midsize
+Nissan,Maxima,3,1999,6,Manual,Front-Wheel,19,25,R,Midsize
+Nissan,Maxima,3.5,2008,6,Manual,Front-Wheel,19,25,P,Midsize
+Nissan,Pathfinder 4WD,3.3,1999,6,Manual,Four-Wheel,14,17,R,SUV
+Nissan,Pathfinder 4WD,3.3,1999,6,Manual,Four-Wheel,15,17,R,SUV
+Nissan,Pathfinder 4WD,4,2008,6,Manual,Four-Wheel,14,20,P,SUV
+Nissan,Pathfinder 4WD,5.6,2008,8,Manual,Four-Wheel,12,18,P,SUV
+Pontiac,Grand Prix,3.1,1999,6,Manual,Front-Wheel,18,26,R,Midsize
+Pontiac,Grand Prix,3.8,1999,6,Manual,Front-Wheel,16,26,P,Midsize
+Pontiac,Grand Prix,3.8,1999,6,Manual,Front-Wheel,17,27,R,Midsize
+Pontiac,Grand Prix,3.8,2008,6,Manual,Front-Wheel,18,28,R,Midsize
+Pontiac,Grand Prix,5.3,2008,8,Manual,Front-Wheel,16,25,P,Midsize
+Subaru,Forester AWD,2.5,1999,4,Manual,Four-Wheel,18,25,R,SUV
+Subaru,Forester AWD,2.5,1999,4,Manual,Four-Wheel,18,24,R,SUV
+Subaru,Forester AWD,2.5,2008,4,Manual,Four-Wheel,20,27,R,SUV
+Subaru,Forester AWD,2.5,2008,4,Manual,Four-Wheel,19,25,P,SUV
+Subaru,Forester AWD,2.5,2008,4,Manual,Four-Wheel,20,26,R,SUV
+Subaru,Forester AWD,2.5,2008,4,Manual,Four-Wheel,18,23,P,SUV
+Subaru,Impreza AWD,2.2,1999,4,Manual,Four-Wheel,21,26,R,Subcompact
+Subaru,Impreza AWD,2.2,1999,4,Manual,Four-Wheel,19,26,R,Subcompact
+Subaru,Impreza AWD,2.5,1999,4,Manual,Four-Wheel,19,26,R,Subcompact
+Subaru,Impreza AWD,2.5,1999,4,Manual,Four-Wheel,19,26,R,Subcompact
+Subaru,Impreza AWD,2.5,2008,4,Manual,Four-Wheel,20,25,P,Compact
+Subaru,Impreza AWD,2.5,2008,4,Manual,Four-Wheel,20,27,R,Compact
+Subaru,Impreza AWD,2.5,2008,4,Manual,Four-Wheel,19,25,P,Compact
+Subaru,Impreza AWD,2.5,2008,4,Manual,Four-Wheel,20,27,R,Compact
+Toyota,4Runner 4WD,2.7,1999,4,Manual,Four-Wheel,15,20,R,SUV
+Toyota,4Runner 4WD,2.7,1999,4,Manual,Four-Wheel,16,20,R,SUV
+Toyota,4Runner 4WD,3.4,1999,6,Manual,Four-Wheel,15,19,R,SUV
+Toyota,4Runner 4WD,3.4,1999,6,Manual,Four-Wheel,15,17,R,SUV
+Toyota,4Runner 4WD,4,2008,6,Manual,Four-Wheel,16,20,R,SUV
+Toyota,4Runner 4WD,4.7,2008,8,Manual,Four-Wheel,14,17,R,SUV
+Toyota,Camry,2.2,1999,4,Manual,Front-Wheel,21,29,R,Midsize
+Toyota,Camry,2.2,1999,4,Manual,Front-Wheel,21,27,R,Midsize
+Toyota,Camry,2.4,2008,4,Manual,Front-Wheel,21,31,R,Midsize
+Toyota,Camry,2.4,2008,4,Manual,Front-Wheel,21,31,R,Midsize
+Toyota,Camry,3,1999,6,Manual,Front-Wheel,18,26,R,Midsize
+Toyota,Camry,3,1999,6,Manual,Front-Wheel,18,26,R,Midsize
+Toyota,Camry,3.5,2008,6,Manual,Front-Wheel,19,28,R,Midsize
+Toyota,Camry Solara,2.2,1999,4,Manual,Front-Wheel,21,27,R,Compact
+Toyota,Camry Solara,2.2,1999,4,Manual,Front-Wheel,21,29,R,Compact
+Toyota,Camry Solara,2.4,2008,4,Manual,Front-Wheel,21,31,R,Compact
+Toyota,Camry Solara,2.4,2008,4,Manual,Front-Wheel,22,31,R,Compact
+Toyota,Camry Solara,3,1999,6,Manual,Front-Wheel,18,26,R,Compact
+Toyota,Camry Solara,3,1999,6,Manual,Front-Wheel,18,26,R,Compact
+Toyota,Camry Solara,3.3,2008,6,Manual,Front-Wheel,18,27,R,Compact
+Toyota,Corolla,1.8,1999,4,Manual,Front-Wheel,24,30,R,Compact
+Toyota,Corolla,1.8,1999,4,Manual,Front-Wheel,24,33,R,Compact
+Toyota,Corolla,1.8,1999,4,Manual,Front-Wheel,26,35,R,Compact
+Toyota,Corolla,1.8,2008,4,Manual,Front-Wheel,28,37,R,Compact
+Toyota,Corolla,1.8,2008,4,Manual,Front-Wheel,26,35,R,Compact
+Toyota,Land Cruiser Wagon 4WD,4.7,1999,8,Manual,Four-Wheel,11,15,R,SUV
+Toyota,Land Cruiser Wagon 4WD,5.7,2008,8,Manual,Four-Wheel,13,18,R,SUV
+Toyota,Toyota Tacoma 4WD,2.7,1999,4,Manual,Four-Wheel,15,20,R,Pickup
+Toyota,Toyota Tacoma 4WD,2.7,1999,4,Manual,Four-Wheel,16,20,R,Pickup
+Toyota,Toyota Tacoma 4WD,2.7,2008,4,Manual,Four-Wheel,17,22,R,Pickup
+Toyota,Toyota Tacoma 4WD,3.4,1999,6,Manual,Four-Wheel,15,17,R,Pickup
+Toyota,Toyota Tacoma 4WD,3.4,1999,6,Manual,Four-Wheel,15,19,R,Pickup
+Toyota,Toyota Tacoma 4WD,4,2008,6,Manual,Four-Wheel,15,18,R,Pickup
+Toyota,Toyota Tacoma 4WD,4,2008,6,Manual,Four-Wheel,16,20,R,Pickup
+Volkswagen,GTI,2,1999,4,Manual,Front-Wheel,21,29,R,Compact
+Volkswagen,GTI,2,1999,4,Manual,Front-Wheel,19,26,R,Compact
+Volkswagen,GTI,2,2008,4,Manual,Front-Wheel,21,29,P,Compact
+Volkswagen,GTI,2,2008,4,Manual,Front-Wheel,22,29,P,Compact
+Volkswagen,GTI,2.8,1999,6,Manual,Front-Wheel,17,24,R,Compact
+Volkswagen,Jetta,1.9,1999,4,Manual,Front-Wheel,33,44,D,Compact
+Volkswagen,Jetta,2,1999,4,Manual,Front-Wheel,21,29,R,Compact
+Volkswagen,Jetta,2,1999,4,Manual,Front-Wheel,19,26,R,Compact
+Volkswagen,Jetta,2,2008,4,Manual,Front-Wheel,22,29,P,Compact
+Volkswagen,Jetta,2,2008,4,Manual,Front-Wheel,21,29,P,Compact
+Volkswagen,Jetta,2.5,2008,5,Manual,Front-Wheel,21,29,R,Compact
+Volkswagen,Jetta,2.5,2008,5,Manual,Front-Wheel,21,29,R,Compact
+Volkswagen,Jetta,2.8,1999,6,Manual,Front-Wheel,16,23,R,Compact
+Volkswagen,Jetta,2.8,1999,6,Manual,Front-Wheel,17,24,R,Compact
+Volkswagen,New Beetle,1.9,1999,4,Manual,Front-Wheel,35,44,D,Subcompact
+Volkswagen,New Beetle,1.9,1999,4,Manual,Front-Wheel,29,41,D,Subcompact
+Volkswagen,New Beetle,2,1999,4,Manual,Front-Wheel,21,29,R,Subcompact
+Volkswagen,New Beetle,2,1999,4,Manual,Front-Wheel,19,26,R,Subcompact
+Volkswagen,New Beetle,2.5,2008,5,Manual,Front-Wheel,20,28,R,Subcompact
+Volkswagen,New Beetle,2.5,2008,5,Manual,Front-Wheel,20,29,R,Subcompact
+Volkswagen,Passat,1.8,1999,4,Manual,Front-Wheel,21,29,P,Midsize
+Volkswagen,Passat,1.8,1999,4,Manual,Front-Wheel,18,29,P,Midsize
+Volkswagen,Passat,2,2008,4,Manual,Front-Wheel,19,28,P,Midsize
+Volkswagen,Passat,2,2008,4,Manual,Front-Wheel,21,29,P,Midsize
+Volkswagen,Passat,2.8,1999,6,Manual,Front-Wheel,16,26,P,Midsize
+Volkswagen,Passat,2.8,1999,6,Manual,Front-Wheel,18,26,P,Midsize
+Volkswagen,Passat,3.6,2008,6,Manual,Front-Wheel,17,26,P,Midsize
