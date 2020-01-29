@@ -21,7 +21,7 @@
 
 rm(list = ls())         # Clear environment objects
 
-path <- "~/Graduate School Data Viz Presentation/Applied Practice"
+setwd("~/GitHub/dataviz/Applied Practice Content")
 
 setwd(path)             # Set working directory
 
@@ -239,7 +239,8 @@ spending <- economics %>%
          `Personal Consumption Expenditures` = pce,
          Unemployed = unemploy,
          `Median Unemployment Time (Weeks)` = uempmed,
-         Population = pop) %>%
+         Population = pop,
+         `Personal Savings (%)` = psavert) %>%
   select(Date, Year, Month, Population, `Personal Consumption Expenditures`:Unemployed)
 
     # ggplot2::diamonds
@@ -404,18 +405,17 @@ rm(url)
 
 # WRITE TO CSV
 
-write_csv(cars, paste0("data/", ls()[1], ".csv"))
-write_csv(college, paste0("data/", ls()[2], ".csv"))
-write_csv(flowers, paste0("data/", ls()[3], ".csv"))
-write_csv(gold, paste0("data/", ls()[4], ".csv"))
-write_csv(houston, paste0("data/", ls()[5], ".csv"))
-write_csv(market, paste0("data/", ls()[6], ".csv"))
-write_csv(mpg, paste0("data/", ls()[7], ".csv"))
-write_csv(path, paste0("data/", ls()[8], ".csv"))
-write_csv(rocks, paste0("data/", ls()[9], ".csv"))
-write_csv(sleep, paste0("data/", ls()[10], ".csv"))
-write_csv(spending, paste0("data/", ls()[11], ".csv"))
-write_csv(wine, paste0("data/", ls()[12], ".csv"))
-write_csv(yarn, paste0("data/", ls()[13], ".csv"))
+write_csv(cars, paste0("data/cars.csv"))
+write_csv(college, paste0("data/college.csv"))
+write_csv(flowers, paste0("data/flowers.csv"))
+write_csv(gold, paste0("data/gold.csv"))
+write_csv(houston, paste0("data/houston.csv"))
+write_csv(market, paste0("data/market.csv"))
+write_csv(mpg, paste0("data/mpg.csv"))
+write_csv(rocks, paste0("data/rocks.csv"))
+write_csv(sleep, paste0("data/sleep.csv"))
+write_csv(spending, paste0("data/spending.csv"))
+write_csv(wine, paste0("data/wine.csv"))
+write_csv(yarn, paste0("data/yarn.csv"))
 
 rm(list = ls())
