@@ -26,9 +26,32 @@ text-align: justify}
 
 
 ```{r include = FALSE}
+
+options(scipen = 999)
+
 knitr::opts_chunk$set(echo = FALSE, 
                       message = FALSE,
                       warning = FALSE)
+
+library(readr)
+library(dplyr)
+library(scales)
+library(kableExtra)
+
+mpg <- read_csv("data/mpg.csv")
+cars <- read_csv("data/cars.csv")
+gold <- read_csv("data/gold.csv")
+wine <- read_csv("data/wine.csv")
+yarn <- read_csv("data/yarn.csv")
+rocks <- read_csv("data/rocks.csv")
+sleep <- read_csv("data/sleep.csv")
+chicks <- read_csv("data/chicks.csv")
+market <- read_csv("data/market.csv")
+college <- read_csv("data/college.csv")
+flowers <- read_csv("data/flowers.csv")
+houston <- read_csv("data/houston.csv")
+spending <- read_csv("data/spending.csv")
+
 ```
 
 
@@ -45,7 +68,7 @@ This page contains a host of materials for practicing data visualization,
 including:
 
 * Links to the original presentation
-* Twelve preprocessed datasets for applied practice
+* Thirteen preprocessed datasets for applied practice
 * Dataset documentation to explore and understand your data
 * Resources for color, accessibility, and other tools to polish your viz 
 * Tutorials to learn about and connect your data to *Google Data Studio* & *MS Excel*
@@ -101,15 +124,34 @@ Some datasets are moderately large, others are quite small, but all are clean.
 
 **Total Variables:** 11
 
-The sleep patterns of 83 mammals, including their common name, genus, diet, total 
+**Recommended Stories:** Comparisons
+
+Sleep patterns of 83 mammals, including their common name, genus, diet, total 
 sleep state, REM state, and awake state (in hours), as well as body and brain weight.
 
 View the documentation [**here**](https://ggplot2.tidyverse.org/reference/msleep.html).
 
 <br>
 
-Open it [**here**](https://docs.google.com/spreadsheets/d/1NzqHZzynywgZMbBj7qKD7tsNpG4f5xLmETVq2Q_hDXo/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+```{r}
 
+sleep[is.na(sleep)] <- ""
+
+kable(sleep[1:5, 1:8] %>%
+        rename(`Total Sleep` = `Total Sleep (Hrs)`,
+               `Status` = `Conservation Status`,
+               `REM` = `REM Sleep (Hrs)`,
+               `Cycle` = `Sleep Cycle (Hrs)`)) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+
+```
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/1NzqHZzynywgZMbBj7qKD7tsNpG4f5xLmETVq2Q_hDXo/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio* or download as a .CSV.
+
+<br>
+<br>
 <br>
 
 
@@ -120,7 +162,9 @@ Open it [**here**](https://docs.google.com/spreadsheets/d/1NzqHZzynywgZMbBj7qKD7
 
 **Total Variables:** 6
 
-Time series data on economic indicators in the United States from 1967 to 2015, 
+**Recommended Stories:** Timeseries
+
+Historical data on economic indicators in the United States from 1967 to 2015, 
 including total population, personal savings rates, personal consumption expenditures, 
 unemployment rates, and median unemployment duration (in weeks).
 
@@ -128,8 +172,27 @@ View the documentation [**here**](https://ggplot2.tidyverse.org/reference/econom
 
 <br>
 
-Open it [**here**](https://docs.google.com/spreadsheets/d/1T0LdBMRgdXpflUgphL2W3gkxdAQ-UT6GYDNPSYjCts0/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+```{r}
 
+spending[is.na(spending)] <- ""
+
+kable(spending[1:5, 1:8] %>%
+        rename(Consumption = `Personal Consumption Expenditures`,
+               Savings = `Personal Savings (%)`,
+               Duration = `Median Unemployment Time (Weeks)`) %>%
+        mutate(Population = number(Population, big.mark = ","),
+               Consumption = dollar(Consumption, big.mark = ","),
+               Unemployed = number(Unemployed, big.mark = ","))) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+
+```
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/1T0LdBMRgdXpflUgphL2W3gkxdAQ-UT6GYDNPSYjCts0/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio* or download as a .CSV.
+
+<br>
+<br>
 <br>
 
 
@@ -140,12 +203,30 @@ Open it [**here**](https://docs.google.com/spreadsheets/d/1T0LdBMRgdXpflUgphL2W3
 
 **Total Variables:** 6
 
+**Recommended Stories:** Timeseries
+
+Historical data on monthly wine sales in Australia by total bottles from 1980 to 1994.
+
 View the documentation [**here**](https://cran.r-project.org/web/packages/forecast/forecast.pdf) (pp. 137-138).
 
 <br>
 
-Open it [**here**](https://docs.google.com/spreadsheets/d/16XjLjj0ZiHP-NAMC19qztf_YEttLK17fIdCL12Ep6EI/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+```{r}
 
+wine[is.na(wine)] <- ""
+
+kable(wine[1:5, ] %>%
+        mutate(Bottles = number(Bottles, big.mark = ","))) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+
+```
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/16XjLjj0ZiHP-NAMC19qztf_YEttLK17fIdCL12Ep6EI/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio* or download as a .CSV.
+
+<br>
+<br>
 <br>
 
 
@@ -156,12 +237,32 @@ Open it [**here**](https://docs.google.com/spreadsheets/d/16XjLjj0ZiHP-NAMC19qzt
 
 **Total Variables:** 19
 
+**Recommended Stories:** Geospatial, Timeseries
+
+Dates and times of violent crimes reported in Houston, Texas, including census blocks, 
+cop beats, and longitude-latitude coordinates.
+
 View the documentation [**here**](https://www.houstontx.gov/police/cs/Monthly_Crime_Data_by_Street_and_Police_Beat.htm). 
+
+<br>
+
+```{r}
+
+houston[is.na(houston)] <- ""
+
+kable(houston[1:5, c(2, 5, 8, 13, 16:17)]) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+
+```
 
 <br>
 
 Open it [**here**](https://docs.google.com/spreadsheets/d/1oIY6q8JqUnRalvX3Qv6XpF8h7Mxkh270AY7ugRsq7Uc/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
 
+This is a big table! If you're only using *Microsoft Excel*, click [**here**](https://github.com/jamisoncrawford/dataviz/raw/master/Applied%20Practice%20Content/data/houston.csv) to directly download as .CSV.
+
+<br>
+<br>
 <br>
 
 
@@ -173,12 +274,30 @@ Open it [**here**](https://docs.google.com/spreadsheets/d/1oIY6q8JqUnRalvX3Qv6Xp
 
 **Total Variables:** 6
 
+**Recommended Stories:** Comparisons
+
+Edgar Anderson's 150 samples of three unique species of Iris flowers, including Setosa, Versicolor, 
+and Virginica, as well as the dimensions of their petals and sepals.
+
 View the documentation [**here**](https://www.rdocumentation.org/packages/datasets/versions/3.6.2/topics/iris). 
 
 <br>
 
-Open it [**here**](https://docs.google.com/spreadsheets/d/1qHnBa7hHoxidn8F5AHaOzygSf1LUK7rc4fxkF3H294U/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+```{r}
 
+flowers[is.na(flowers)] <- ""
+
+kable(flowers[1:5, 1:6]) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+
+```
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/1qHnBa7hHoxidn8F5AHaOzygSf1LUK7rc4fxkF3H294U/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio* or download as a .CSV.
+
+<br>
+<br>
 <br>
 
 
@@ -189,7 +308,12 @@ Open it [**here**](https://docs.google.com/spreadsheets/d/1qHnBa7hHoxidn8F5AHaOz
 
 **Total Variables:** 21
 
-Reduced from 1,978 variables, 
+**Recommended Stories:** Geospatial & Timeseries
+
+Reduced from 1,978 variables, the U.S. Department of Education's College Score Cards contain key 
+data points on post-secondary institutions, including ACT and SAT scores, admissions rates, 
+total undegrads, tuition revenue, and average faculty salaries, as well as longitude-latitude 
+coordinates.
 
 View the documentation [**here**](https://collegescorecard.ed.gov/data/documentation/).
 
@@ -197,8 +321,23 @@ Find the data portal [**here**](https://collegescorecard.ed.gov/data/).
 
 <br>
 
+```{r}
+
+college[is.na(college)] <- ""
+
+kable(college[1:5,c(1, 3:5, 7:8)]) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+
+```
+
+<br>
+
 Open it [**here**](https://docs.google.com/spreadsheets/d/16Z_S25YUDTA9XTETiP3erHlgWfo2m8Ues_jWCax0pHE/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
 
+This is a big table! If you're only using *Microsoft Excel*, click [**here**](https://github.com/jamisoncrawford/dataviz/raw/master/Applied%20Practice%20Content/data/college.csv) to directly download as .CSV.
+
+<br>
+<br>
 <br>
 
 
@@ -209,12 +348,31 @@ Open it [**here**](https://docs.google.com/spreadsheets/d/16Z_S25YUDTA9XTETiP3er
 
 **Total Variables:** 3
 
+**Recommended Stories:** Timeseries
+
+Quarterly woolen yarn sales in tons from 1965 to 1994.
+
 View the documentation [**here**](https://cran.r-project.org/web/packages/forecast/forecast.pdf) (pp. 138).
 
 <br>
 
-Open it [**here**](https://docs.google.com/spreadsheets/d/1ZqMtPkW7cOyGFj-pxx0oEB5rm62mRCQ-gfCLNqCAmWg/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+```{r}
 
+yarn[is.na(yarn)] <- ""
+
+kable(yarn[1:5, ] %>%
+        mutate(Tons = number(Tons, big.mark = ","))) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"),
+                full_width = FALSE)
+
+```
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/1ZqMtPkW7cOyGFj-pxx0oEB5rm62mRCQ-gfCLNqCAmWg/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio* or download as a .CSV.
+
+<br>
+<br>
 <br>
 
 
@@ -225,12 +383,32 @@ Open it [**here**](https://docs.google.com/spreadsheets/d/1ZqMtPkW7cOyGFj-pxx0oE
 
 **Total Variables:** 11
 
+**Recommended Stories:** Comparisons
+
+Comparison data on the fuel economy of 38 popular cars from 1999 and 2008, including 
+make, model, engine displacement, cylinders, transmission type, class, and city/highway mileage. 
+
 View the documentation [**here**](https://ggplot2.tidyverse.org/reference/mpg.html).
 
 <br>
 
-Open it [**here**](https://docs.google.com/spreadsheets/d/1V4-57hFM-ghCwZ1UUG-of3IPwjINaJTl-WQ6n9Oo_Jo/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+```{r}
 
+mpg[is.na(mpg)] <- ""
+
+kable(mpg[1:5, c(1, 2, 4:6, 8:9)] %>%
+        rename(`City` = `City MPG`,
+               `Highway` = `Highway MPG`)) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+
+```
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/1V4-57hFM-ghCwZ1UUG-of3IPwjINaJTl-WQ6n9Oo_Jo/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio* or download as a .CSV.
+
+<br>
+<br>
 <br>
 
 
@@ -241,12 +419,33 @@ Open it [**here**](https://docs.google.com/spreadsheets/d/1V4-57hFM-ghCwZ1UUG-of
 
 **Total Variables:** 9
 
+**Recommended Stories:** Comparisons
+
+A massive set of 53,940 diamonds measured in carats, length, width, and depth dimensions, and 
+professionally-assessed color, cut, and clarity.
+
 View the documentation [**here**](https://ggplot2.tidyverse.org/reference/diamonds.html).
+
+<br>
+
+```{r}
+
+rocks[is.na(rocks)] <- ""
+
+kable(rocks[1:5, 1:8] %>%
+        mutate(`Price (USD)` = dollar(`Price (USD)`, big.mark = ","))) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+
+```
 
 <br>
 
 Open it [**here**](https://docs.google.com/spreadsheets/d/1sVh_xUnnwuB-AQzkgRMKN8TZyHPyR4dQTklDHTgD9qg/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
 
+This is a big table! If you're only using *Microsoft Excel*, click [**here**](https://github.com/jamisoncrawford/dataviz/raw/master/Applied%20Practice%20Content/data/rocks.csv) to directly download as .CSV.
+
+<br>
+<br>
 <br>
 
 
@@ -257,12 +456,32 @@ Open it [**here**](https://docs.google.com/spreadsheets/d/1sVh_xUnnwuB-AQzkgRMKN
 
 **Total Variables:** 11
 
+**Recommended Stories:** Comparisons, Geospatial, Timeseries
+
+Historical data on Texas real estate sales from 2000 to 2015, including city, state, date of sale, 
+total sales, total value (USD), median price, and estimated duration to sell all listed properties.
+
 View the documentation [**here**](https://ggplot2.tidyverse.org/reference/txhousing.html)
 
 <br>
 
-Open it [**here**](https://docs.google.com/spreadsheets/d/1-KicsB_bJZz3ANk8mnhnUmJktzXy1AnHrXPY3OpWo6c/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+```{r}
 
+market[is.na(market)] <- ""
+
+kable(market[1:5, c(1:3, 5, 7:9)] %>%
+        mutate(`Total Value` = dollar(as.numeric(`Total Value`), big.mark = ","),
+               `Median Price` = dollar(as.numeric(`Median Price`), big.mark = ","))) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"))
+
+```
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/1-KicsB_bJZz3ANk8mnhnUmJktzXy1AnHrXPY3OpWo6c/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio* or download as a .CSV.
+
+<br>
+<br>
 <br>
 
 
@@ -273,45 +492,319 @@ Open it [**here**](https://docs.google.com/spreadsheets/d/1-KicsB_bJZz3ANk8mnhnU
 
 **Total Variables:** 4
 
+**Recommended Stories:** Timeseries
+
+Daily morning valuations of gold in USD from 1985 to 1988. 
+
 View the documentation [**here**](https://cran.r-project.org/web/packages/forecast/forecast.pdf) (pp. 84-85).
 
 <br>
 
-Open it [**here**](https://docs.google.com/spreadsheets/d/16HB4s8wtGmry1IHQw9giNFi0N2bNZX0CucjwEDNUWUo/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+```{r}
 
+gold[is.na(gold)] <- ""
+
+kable(gold[1:5, ] %>%
+        mutate(USD = dollar(as.numeric(USD), big.mark = ","))) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"),
+                full_width = FALSE)
+
+```
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/16HB4s8wtGmry1IHQw9giNFi0N2bNZX0CucjwEDNUWUo/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio* or download as a .CSV.
+
+<br>
+<br>
 <br>
 
 
 
 ## Chick Weights
 
-**Total Observations:**
+**Total Observations:** 71
 
-**Total Variables:**
+**Total Variables:** 3
+
+**Recommended Stories:** Comparisons
+
+Experiment results from randomly assigning, newborn chicks to different diets, like soybean and meatmeal, 
+and measuring their weight.
 
 View the documentation [**here**](https://stat.ethz.ch/R-manual/R-patched/library/datasets/html/chickwts.html).
 
 <br>
 
-Open it [**here**](https://docs.google.com/spreadsheets/d/1K3D_KXJh2NnBsMnonNJvKoculks6Xey4dX0wa7Dgr3E/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+```{r}
 
+chicks[is.na(chicks)] <- ""
+
+kable(chicks[1:5, ]) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"),
+                full_width = FALSE)
+
+```
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/1K3D_KXJh2NnBsMnonNJvKoculks6Xey4dX0wa7Dgr3E/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio* or download as a .CSV.
+
+<br>
+<br>
 <br>
 
 
 
 ## Classic Cars
 
-**Total Observations:**
+**Total Observations:** 32
 
-**Total Variables:**
+**Total Variables:** 12
+
+**Recommended Stories:** Comparisons
+
+Specs of 32 classic cars from a 1974 issue of U.S. magazine *Motor Trend*, including fuel economy, 
+cylinders, gears, weight, engine displacement, horsepower, and transmission.
 
 View the documentation [**here**](https://www.rdocumentation.org/packages/datasets/versions/3.6.2/topics/mtcars).
 
 <br>
 
-Open it [**here**](https://docs.google.com/spreadsheets/d/1dFKlfRTnVFyuXSWcDXVyslm4AO86MJY_-1zUjevMh2A/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio*.
+```{r}
 
+cars[is.na(cars)] <- ""
+
+kable(cars[1:5, c(1:5, 7, 10)] %>%
+        mutate(Pounds = number(Pounds, big.mark = ","))) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"),
+                full_width = FALSE)
+
+```
+
+<br>
+
+Open it [**here**](https://docs.google.com/spreadsheets/d/1dFKlfRTnVFyuXSWcDXVyslm4AO86MJY_-1zUjevMh2A/edit?usp=sharing) in *Google Sheets* to copy and connect it to *Google Data Studio* or download as a .CSV.
+
+<br>
+<br>
 <br>
 
 
 
+# Connecting to Data Studio
+
+*Google Data Studio* is a point-and-click, drag-and-drop application for creating interactive reporting tools.
+
+In order to create a report and connect your data, you must:
+
+1. Sign into your *Google* account
+2. Copy or upload a *Google Sheets* table to your *Google Drive*
+3. Create a new report in *Google Data Studio* (with one click)
+4. Select your connection application (*Google Sheets*)
+5. Make sure your variables are the correct class and add your new "connection"
+
+<br>
+<br>
+<br>
+
+
+
+## Copy an Existing Dataset
+
+Open up a dataset in *Google Sheets*.  
+
+1. Click "File" and "Make a copy..." (see *Step 1.1*)
+2. Make sure "Folder" is set to "My Drive" (see *Step 1.2*)
+3. Click "OK"
+
+<br>
+
+<center>
+
+**Step 1.1: Select "Make a copy..." in "File"**
+
+<br>
+
+![](C:/Users/jcrawford52/Documents/GitHub/dataviz/Applied Practice Content/images/copy-data_step-1.jpg)
+
+<br>
+
+**Step 1.2: Make sure "Folder" is set to "My Drive" and click "OK"**
+
+<br>
+
+![](C:/Users/jcrawford52/Documents/GitHub/dataviz/Applied Practice Content/images/copy-data_step-2.jpg)
+
+</center>
+
+<br>
+<br>
+<br>
+
+
+
+## Create & Connect Reports
+
+In order to create a new report and connect it to your data, visit the [**Data Studio home page**](https://datastudio.google.com/).
+
+1. Click "Start a New Report" (see *Step 2.1*)
+2. Select "Create New Data Source" (see *Step 2.2*)
+3. Select your connection method (see *Step 2.3*)
+
+<br>
+
+<center>
+
+**Step 2.1: Click "Start a New Report"**
+
+<br>
+
+![](C:/Users/jcrawford52/Documents/GitHub/dataviz/Applied Practice Content/images/connect_step-1.jpg)
+
+<br>
+
+**Step 2.2: Click "Create New Data Source"**
+
+<br>
+
+![](C:/Users/jcrawford52/Documents/GitHub/dataviz/Applied Practice Content/images/connect_step-2.jpg)
+
+<br>
+
+**Step 2.3: Select "Google Sheets" as your connection method**
+
+<br>
+
+![](C:/Users/jcrawford52/Documents/GitHub/dataviz/Applied Practice Content/images/connect_step-3.jpg)
+
+</center>
+
+<br>
+<br>
+<br>
+
+
+
+## Edit Your Connection
+
+It's the final stretch. You just have to choose your table and check your variables.
+
+1. Select the spreadsheet, worksheet, and options from *Google Sheets* (see *Step 3.1*)
+2. Click "OK", then check that the "Type" of each variable is correct (see *Step 3.2*)
+3. Click "Add to Report"
+
+<br>
+
+<center>
+
+**Step 3.1: Select the correct "Spreadsheet" (B) and options (D)**
+
+<br>
+
+![](C:/Users/jcrawford52/Documents/GitHub/dataviz/Applied Practice Content/images/edit_step-1.jpg)
+
+<br>
+
+**Step 3.2: Check each variable "Type" and select "Add to Report"**
+
+![](C:/Users/jcrawford52/Documents/GitHub/dataviz/Applied Practice Content/images/edit_step-2.jpg)
+
+</center>
+
+<br>
+<br>
+<br>
+
+
+
+# Visualization Resources
+
+The following are just a few resources for creating effective visualizations with any tooling.
+
+<br>
+<br>
+<br>
+
+
+
+## Extracting Colors
+
+[**HTML Color Codes**](https://html-color-codes.info/colors-from-image/) allows you to upload images and logos to extract their precise colors.
+
+<br>
+
+<center>
+
+![](C:/Users/jcrawford52/Documents/GitHub/dataviz/Applied Practice Content/images/tips_1.jpg)
+
+</center>
+
+<br>
+<br>
+<br>
+
+
+
+## Generate Color Palettes
+
+[**Coolers**](https://coolors.co/) is an excellent tool for generating complementary and gradient color palettes. 
+
+<br>
+
+<center>
+
+![](C:/Users/jcrawford52/Documents/GitHub/dataviz/Applied Practice Content/images/tips_2.jpg)
+
+</center>
+
+<br>
+<br>
+<br>
+
+
+
+## Mind Accessibility
+
+If using light fonts or dark backgrounds, ensure the contrast is still visually-accessible with [**WebAIM**](https://webaim.org/resources/contrastchecker/).
+
+<br>
+
+<center>
+
+![](C:/Users/jcrawford52/Documents/GitHub/dataviz/Applied Practice Content/images/tips_3.jpg)
+
+</center>
+
+<br>
+<br>
+<br>
+
+
+
+## Fonts
+
+Though **Google Data Studio** fonts are limited, they're extremeley legible. 
+
+Consider downloading some font families to complement your reports and presentations in [**Google Fonts**](https://fonts.google.com/).
+
+Tuesday's presentation used "Quicksand" - it's dope. You can easily look up how to install new fonts.
+
+<br>
+<br>
+<br>
+
+
+
+## Additional Tutorials
+
+I've created a number of more advanced guides covering *Google Data Studio*, check them out:
+
+* [**Introduction to Google Data Studio: Creating Reports**](https://rpubs.com/JamisonCrawford/gds1)
+* [**Introduction to Google Data Studio: Choropleth Maps & Color Palettes**](https://rpubs.com/JamisonCrawford/gds2)
+* [**Introduction to Google Data Studio: Tables, Score Cards, & New Fields**](https://rpubs.com/JamisonCrawford/gds3)
+* [**Introduction to Google Data Studio: Advanced Filtering**](https://rpubs.com/JamisonCrawford/gds4)
+
+<br>
+<br>
+<br>

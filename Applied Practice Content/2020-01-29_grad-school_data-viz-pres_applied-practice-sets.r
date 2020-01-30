@@ -387,7 +387,7 @@ college <- college %>%
          `Median SAT - Writing` = satwrmid,
          `Median ACT` = actcmmid,
          `Average SAT` = sat_avg,
-         `Total Undegrads` = ugds,
+         `Total Undergrads` = ugds,
          `Tuituion Revenue, FT Students` = tuitfte,
          `Average Monthly Faculty Salary (USD)` = avgfacsal,
          `Pell Eligible (%)` = pctpell) %>%
@@ -416,5 +416,3 @@ write_csv(sleep, paste0("data/sleep.csv"))
 write_csv(spending, paste0("data/spending.csv"))
 write_csv(wine, paste0("data/wine.csv"))
 write_csv(yarn, paste0("data/yarn.csv"))
-
-rm(list = ls())
