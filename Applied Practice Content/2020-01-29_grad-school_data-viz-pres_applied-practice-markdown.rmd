@@ -350,7 +350,7 @@ Open it [**here**](https://docs.google.com/spreadsheets/d/1qHnBa7hHoxidn8F5AHaOz
 
 Reduced from 1,978 variables, the U.S. Department of Education's College Score Cards contain key 
 data points on post-secondary institutions, including ACT and SAT scores, admissions rates, 
-total undegrads, tuition revenue, and average faculty salaries, as well as longitude-latitude 
+total undergrads, tuition revenue, and average faculty salaries, as well as longitude-latitude 
 coordinates.
 
 View the documentation [**here**](https://collegescorecard.ed.gov/data/documentation/).
@@ -840,7 +840,7 @@ If using light fonts or dark backgrounds, ensure the contrast is still visually-
 
 ## Use Legible Fonts
 
-Though **Google Data Studio** fonts are limited, they're extremeley legible. 
+Though **Google Data Studio** fonts are limited, they're extremely legible. 
 
 Consider downloading some font families to complement your reports and presentations in [**Google Fonts**](https://fonts.google.com/).
 
