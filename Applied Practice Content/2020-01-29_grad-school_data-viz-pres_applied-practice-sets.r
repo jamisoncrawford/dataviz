@@ -277,6 +277,14 @@ sleep <- msleep %>%
          `Conservation Status` = ifelse(`Conservation Status` == "DOMESTICATED", "Domesticated", `Conservation Status`)) %>%
   arrange(Vore, Mammal)
 
+index <- which(sleep$Vore == "Navore")
+
+sleep[index, "Vore"] <- NA
+
+sleep <- sleep %>%
+  mutate(Mammal = str_replace_all(Mammal, "-", " "),
+         Mammal = str_to_title(Mammal))
+
 
     # ggplot2::mpg
 
