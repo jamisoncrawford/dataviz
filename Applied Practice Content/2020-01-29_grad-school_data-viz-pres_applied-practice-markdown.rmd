@@ -81,13 +81,51 @@ including:
 
 
 
-# Presentation & Contents
+# Presentation
 
 Click [**here**](https://github.com/jamisoncrawford/dataviz/raw/master/Best%20Practices%20Content/2020-01-28%20-%20Picture%20This%20-%20Best%20Practices%20in%20Data%20Visualization%20(Crawford%2C%202020).pptx) to download Tuesday's presentation, **Picture This: Best Practices in Data Visualization**.
 
+<br>
+
+<center>
+
+![](C:/Users/jcrawford52/Documents/GitHub/dataviz/Applied Practice Content/images/pres_1.jpg)
+
+</center>
+
+<br>
+
+Recall the main takeaways from Tuesday's presentation:
+
+* **You're already an expert** (i.e. *you know what looks good*).
+* **You're always persuading** (i.e. *every chart is manipulative*).
+* **Respect your audience** (i.e. *their intelligence, time,* etc.).
+    - Use the **best "data ink"** and limit eye movement
+    - Rely on **conventions** (e.g. *"up" is "North", "green" is "good"*)
+    - Lose the **junk** (i.e. *ink should only aid understanding*)
+    - Add **polish** (i.e. *spend 5-10 extra minutes on a viz*)
+
+<br>
+
+<center>
+
+![](C:/Users/jcrawford52/Documents/GitHub/dataviz/Applied Practice Content/images/pres_2.jpg)
+
+</center>
+
+<br>
+
 You can view the code to process our practice datasets and write this page by visiting the [**GitHub repository**](https://github.com/jamisoncrawford/dataviz).
 
+Lastly, click [**here**](https://drive.google.com/file/d/1BO26j7VmWmxhk9cg1AChaIGSrITJp5C8/view) to view the handout on choosing the best visualization tooling.
 
+<br>
+
+<center>
+
+![](C:/Users/jcrawford52/Documents/GitHub/dataviz/Applied Practice Content/images/pres_3.jpg)
+
+</center>
 
 <br>
 <br>
@@ -728,7 +766,25 @@ The following are just a few resources for creating effective visualizations wit
 
 
 
-## Extracting Colors
+## Choose the Best Viz
+
+What visualization is best depends on shape and type. [**Data Viz Project**](https://datavizproject.com/) can help. 
+
+<br>
+
+<center>
+
+![](C:/Users/jcrawford52/Documents/GitHub/dataviz/Applied Practice Content/images/tips_4.jpg)
+
+</center>
+
+<br>
+<br>
+<br>
+
+
+
+## Extract Colors
 
 [**HTML Color Codes**](https://html-color-codes.info/colors-from-image/) allows you to upload images and logos to extract their precise colors.
 
@@ -746,7 +802,7 @@ The following are just a few resources for creating effective visualizations wit
 
 
 
-## Generate Color Palettes
+## Generate Palettes
 
 [**Coolers**](https://coolors.co/) is an excellent tool for generating complementary and gradient color palettes. 
 
@@ -782,13 +838,21 @@ If using light fonts or dark backgrounds, ensure the contrast is still visually-
 
 
 
-## Fonts
+## Use Legible Fonts
 
 Though **Google Data Studio** fonts are limited, they're extremeley legible. 
 
 Consider downloading some font families to complement your reports and presentations in [**Google Fonts**](https://fonts.google.com/).
 
 Tuesday's presentation used "Quicksand" - it's dope. You can easily look up how to install new fonts.
+
+<br>
+
+<center>
+
+![](C:/Users/jcrawford52/Documents/GitHub/dataviz/Applied Practice Content/images/tips_5.jpg)
+
+</center>
 
 <br>
 <br>
@@ -808,3 +872,42 @@ I've created a number of more advanced guides covering *Google Data Studio*, che
 <br>
 <br>
 <br>
+
+
+
+# Contact
+
+Feel free to contact me at any time with questions or for help.
+
+* **Name:** Jamison Crawford, MPA
+
+* **Email:** [**jcrawford52@gsu.edu**](mailto:jcrawford52@gsu.edu)
+
+* **LinkedIn:** [**in/jamisoncrawford**](https://www.linkedin.com/in/jamisoncrawford/)
+
+* **GitHub Profile:** [**github.com/jamisoncrawford**](https://github.com/jamisoncrawford)
+
+* **Rpubs Portfolio:** [**rpubs.com/jamisoncrawford**](https://rpubs.com/jamisoncrawford)
+
+<br>
+<br>
+<br>
+
+
+
+# Thanks
+
+Thank you to everyone who's participated in **Picture This: Best Practices in Data Visualization**.
+
+Special thanks to **Dori Neptune** for facilitating all logistics - we couldn't have done it without her.
+
+Lastly, thanks to the following and their leadership for trusting me in front of an audience:
+
+* [**Center for the Advancement of Students & Alumni (CASA)**](https://casa.gsu.edu/)
+* [**The Graduate School at Georgia State University**](https://graduate.gsu.edu/)
+
+<br>
+<br>
+<br>
+
+
